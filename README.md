@@ -2,7 +2,7 @@
 
 ## Useful Changes
 
-`package.json` of `lib1` and `lib2` (i.e. `privy-wagmi-connector` and `@privy-io/react-auth` respectively) have been updated with the following:
+`package.json` of `lib1` and `lib2` (i.e. `privy-wagmi-connector` and `@privy-io/react-auth` respectively) have been updated with the following (note "type": "module" especially):
 
 ```json
 {
