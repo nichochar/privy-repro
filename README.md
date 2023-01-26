@@ -2,7 +2,7 @@
 
 ## Useful Changes
 
-`package.json` of `lib1` and `lib2` (i.e. `privy-wagmi-connector` and `@privy-io/react-auth` respectively) have been updated with the following (note "type": "module" especially):
+`package.json` of `lib1` and `lib2` (i.e. `privy-wagmi-connector` and `@privy-io/react-auth` respectively) have been updated with the following (note `"type": "module"` especially):
 
 ```json
 {
@@ -27,7 +27,7 @@ Also, no more custom formatting for output files (maybe you were doing that for 
 
 `tsup.config.js` should look like the following for your libs:
 
-```
+```js
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
