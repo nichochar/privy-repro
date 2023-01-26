@@ -1,0 +1,4 @@
+app/node_modules
+app/.next
+lib1/node_modules
+lib2/node_modules
