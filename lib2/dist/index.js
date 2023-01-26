@@ -1,1 +1,1 @@
-import{useAccount as g}from"wagmi";var t="thing to log";export{t as thing,g as useAccount};
+import{erc20ABI as o}from"wagmi";var r="thing to log",n=o;export{n as forward,r as thing};
