@@ -20,13 +20,17 @@
         "build": "npx tsup --clean --minify"
     },
     "devDependencies": {
+        "@types/styled-components": "^5.1.26",
         "tsup": "^6.5.0",
         "typescript": "^4.9.4"
     },
     "peerDependencies": {
-        "wagmi": "^0.10.10",
         "ethers": "^5.7.2",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "wagmi": "^0.10.10"
+    },
+    "dependencies": {
+        "styled-components": "^5.3.6"
     }
 }
