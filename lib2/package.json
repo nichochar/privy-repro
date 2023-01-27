@@ -1,36 +1,44 @@
 {
-    "name": "lib2",
-    "version": "1.0.0",
-    "files": [
-        "dist"
-    ],
-    "main": "./dist/index.js",
-    "module": "./dist/index.js",
-    "types": "./dist/index.d.ts",
-    "typings": "./dist/index",
-    "type": "module",
-    "exports": {
-        ".": {
-            "import": "./dist/index.js",
-            "require": "./dist/index.cjs",
-            "types": "./dist/index.d.ts"
-        }
+  "name": "lib2",
+  "version": "1.0.0",
+  "files": [
+    "/component",
+    "/dist"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     },
-    "scripts": {
-        "build": "npx tsup --clean --minify"
+    "./component": {
+      "types": "./dist/component.d.ts",
+      "default": "./dist/component.js"
     },
-    "devDependencies": {
-        "@types/styled-components": "^5.1.26",
-        "tsup": "^6.5.0",
-        "typescript": "^4.9.4"
-    },
-    "peerDependencies": {
-        "ethers": "^5.7.2",
-        "react": "^18.2.0",
-        "react-dom": "^18.2.0",
-        "wagmi": "^0.10.10"
-    },
-    "dependencies": {
-        "styled-components": "^5.3.6"
-    }
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "dev": "DEV=true tsup",
+    "build": "npx tsup --clean --minify"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "@types/styled-components": "^5.1.26",
+    "dedent": "^0.7.0",
+    "execa": "^6.1.0",
+    "fs-extra": "^11.1.0",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.4"
+  },
+  "peerDependencies": {
+    "ethers": "^5.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "wagmi": "^0.10.10"
+  },
+  "dependencies": {
+    "styled-components": "^5.3.6"
+  }
 }
