@@ -39,6 +39,7 @@
     "wagmi": "^0.10.10"
   },
   "dependencies": {
+    "next": "^13.1.5",
     "styled-components": "^5.3.6"
   }
 }
