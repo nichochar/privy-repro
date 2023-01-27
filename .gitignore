@@ -1,5 +1,5 @@
-app/node_modules
-app/.next
+next-app/node_modules
+next-app/.next
 lib1/dist
 lib1/node_modules
 lib2/dist

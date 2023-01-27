@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Inter } from '@next/font/google';
 import styles from '@/styles/Home.module.css';
 import dynamic from 'next/dynamic';
+import Component2 from 'lib2/component';
 
 const inter = Inter({ subsets: ['latin'] });
 const Component = dynamic(() => import('lib2/component'), {
@@ -42,7 +43,8 @@ export default function Home() {
                         </a>
                     </div>
                 </div>
-                <Component>Hello</Component>
+                <Component>Hello client rendered</Component>
+                <Component2>Hello server rendered</Component2>
                 <div className={styles.center}>
                     <Image
                         className={styles.logo}
